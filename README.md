@@ -25,8 +25,8 @@ Uses the Fetch API to transmit JSON payloads via POST requests to a remote valid
 ## Interface Preview
 ![Bookshop Home Page](images/homepage.png)
 
-![Payment Form Page](images/payment-form.png)
+![Payment Form Page](images/payment-needed.png)
 
-![Success Screen Page](images/success-screen.png)
+![Success Screen Page](images/payment-success.png)
 
 * No payment profiles or sensitive data assets are stored, captured, or transmitted to external databases.
