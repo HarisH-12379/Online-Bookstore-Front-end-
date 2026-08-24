@@ -1,6 +1,6 @@
 # HH Bookshop - E-Commerce Frontend and Validation Engine
 
-A multi-page frontend web application simulating a secure online bookstore check-out workflow. Built during Year 1 at Manchester Metropolitan University to demonstrate form validation, asynchronous network requests, and data privacy.
+A multi-page frontend web application simulating a secure online bookstore check-out workflow. I built this during Year 1 at Manchester Metropolitan University to demonstrate form validation, making servers talk to each other and data privacy.
 
 ## Key Features
 
