@@ -29,4 +29,4 @@ Uses the Fetch API to transmit JSON payloads via POST requests to a remote valid
 
 ![Success Screen Page](images/payment-success.png)
 
-* No payment profiles or sensitive data assets are stored, captured, or transmitted to external databases.
+* None of the sensitive data which is stored is actuallu used or saved by any third parties or external apps
