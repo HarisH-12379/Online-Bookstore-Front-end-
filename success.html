@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" >
+      <script src="javascript/Main.js"></script>
+      <link rel = "stylesheet" href="css/style.css">
+      <title> Pay </title>
+    </head>
+    
+    <body>
+        <div id= "logo">
+      <img src="images/Logo-HH-Bookshop.png" alt="Bookshop Logo">
+    </div>
+    
+    
+       <h1> Welcome to the HH Bookshop</h1>
+ 
+    <div id = "navigation">  <!-- All links to other pages are part of thr navigation bar-->
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+
+
+      <h2 class = "pay-line">Payment Success</h2>
+
+        <h3> Debit/Credit Card</h3>
+      
+      <div class="Payment-type">
+      <img src="images/CardTypes.jpg" alt="Different Cards">
+
+      </div>
+     
+      <div id ="Success">  <!-- This tell users payment has gone through-->
+        <h2> Thank you for your purchase</h2>
+        <p> Your Payment went through Successfully.</p>
+
+        <p>Your card: <span id="cardDigits"></span></p>
+
+        <a id="HomePage" href="index.html">Return Home </a>
+
+        </div>
+
+        <script>
+          const extract = new URLSearchParams(window.location.search) //This extracts the card details from pay.html and sends themm to Success.html//
+          const card = extract.get("cardNumber");
+
+          //Makes sure card has more than 4 digits so no errors
+          if (card && card.length >= 4){ 
+            const last4digits = card.slice(-4)
+            document.getElementById("cardDigits").innerHTML = "**** **** **** " + last4digits;
+            // here we retrive the cardDigits and use innerHTML from W3schools which allows me to put the text within cardDigits and display it their.
+          } 
+        </script>  <!-- this takes the last 4 digits and display them -->
+
+
+       
+      </body>  
+      </html>
+
+    

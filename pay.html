@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0" >
+      <script src="javascript/Main.js"></script>
+      <link rel = "stylesheet" href="css/style.css">
+      <title> Pay </title>
+    </head>
+    
+    <body>  <!-- Consistent layout throught all HTML pages-->
+        <div id= "logo">
+      <img src="images/Logo-HH-Bookshop.png" alt="Bookshop Logo">
+    </div>
+
+       <h1> Welcome to the HH Bookshop</h1>
+ 
+    <div id = "navigation">  <!-- All links to other pages are part of thr navigation bar-->
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+
+
+      <h2 class = "pay-line">Payment Options Available</h2>
+
+
+      <h3> Debit/Credit Card</h3>
+      
+      <div class="Payment-type">
+      <img src="images/CardTypes.jpg" alt="Different Cards options ">
+
+      </div>
+    
+      <form id ="PayForm"> <!-- Payment form when users enter card details -->
+        <label for="cardNumber">Card Number</label><br>
+        <input type="text"  id="cardNumber" name="cardNumber" maxlength="16" placeholder="Enter your 16 digit MasterCard Number">
+        <br>
+
+                <label for="expMonth">Expiration Month</label><br>
+        <select name="Expiry Month" id="expMonth">
+        <option value="">Month</option>
+        <option value="1">01</option>
+        <option value="2">02</option>
+        <option value="3">03</option>
+        <option value="4">04</option>
+        <option value="5">05</option>
+        <option value="6">06</option>
+        <option value="7">07</option>
+        <option value="8">08</option>
+        <option value="9">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        </select>
+        <br>
+
+        <label for="expYear">Expiration Year</label><br>
+        <select name="Expiry Year" id="expYear">
+          <option value="">Year</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+        </select>
+        <br>
+
+
+        <label for="CVV">Security Code For Card</label><br>
+        <input type="text" id="CVV" maxlength="4" placeholder="3 to 4 digits">
+        
+       <!-- this ultimately triggers the JS validation ....-->
+        <button type="submit" id="Continue">Continue Here</button>
+
+      </form>
+      
+      
+    </body>
+   </html>
+
+
+
+

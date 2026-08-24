@@ -1,0 +1,283 @@
+/* Controls Colour */
+body{
+    background-color: lightgrey;
+    padding-top: 10px;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
+
+#logo img {
+    width: 75px;
+    height: auto;
+}
+
+h1{
+    position: static;
+    margin-left: -29px;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+
+
+    font-family: verdana;
+    font-size: 20px;
+    color: #020203;
+    letter-spacing: -1px;
+
+}
+/* Headings */
+h2, h3 {
+    color: #020203;
+    font-size: 22px;
+    font-family: verdana;
+    font-weight: 600;
+}
+.pay-line{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 15px;
+
+}
+
+#navigation {
+    position: static;
+    width: 100%;
+    padding: 3px;
+    margin-top: 0;
+    text-align: center;
+
+}
+
+#navigation ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+
+#navigation li {
+    margin-right: 85px;
+    text-align: center;
+}
+
+#navigation a {
+
+    font-family: verdana;
+    font-size: 15px;
+    
+}
+
+
+#book1 img, #book2 img, #book3 img, #book4 img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+} 
+
+#description1, #description2, #description3, #description4 {  /* Using Apple font to make it look clean*/
+    width: 300px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial , sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #1d1d1f;
+    line-height: 1.5;
+}
+/* Container layout using Flexbot which practiced in Lab */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+#book1 , #book2 , #book3 , #book4 {
+    display: flex;
+    width: 45%;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.Payment-type {
+    text-align: left;
+    margin-left: 0;
+}
+
+.Payment-type img {  /* Different Card types */
+    width: 200px;
+    height: auto;
+
+
+    
+}
+
+#PayForm { /* this controls the postion of my Payment Form */
+    width: 700px;
+    background-color: white;
+    border: white;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top:  0px;
+    text-align: left;
+}
+
+#PayForm input,
+#PayForm select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    display: block;
+
+
+}
+
+#Continue {
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: wavy;
+    width: 30%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin: 20px auto 0 auto;
+    background-color: lightgoldenrodyellow;
+}
+
+#Success { /* This controls the success page layout */
+    width: 700px;
+    background-color: white;
+    border: white;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top:  0px;
+    text-align: left;
+}
+
+#HomePage {   /* This button send back to home page */
+    display: inline-block;
+    padding: 20px;
+    background-color: darkcyan;
+    font-size: 18px;
+    text-decoration: wavy;
+    font-weight: bold;
+    color: white;
+}
+
+#Success p {
+    font-size: 20px;
+    margin:  10px;
+}   
+
+@media (max-width:600px) {  /* this is for the smartphone layout for all of the pages/*/
+    
+ #logo img {
+    width: 45px;
+
+}
+    
+.container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    
+    
+body {
+     padding-top: 10px;
+    }
+
+h1{
+    position: static;
+    left: 5px;
+    margin-left: 0px;
+    padding-left: 30px;
+}
+
+#navigation {
+    position: static;
+    top: 1%;
+}
+
+#navigation ul {
+    display: block;
+    padding: 0;
+}
+
+#navigation li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+    #book1, #book2, #book3, #book4{
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+  }
+
+  #book1 img, #book2 img, #book3 img, #book4 img {
+    width: 122px;
+    margin-left: 0;
+    height: auto;
+    
+} 
+
+#description1, #description2, #description3, #description4 {
+    width: 60%;
+}
+#navigation li {
+    margin-right: 20px;
+}
+
+#PayForm {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#PayForm input,
+#PayForm select {
+    width: 85%;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    display: block;
+    box-sizing: border-box;  /* this keeps the bozes same size */
+}
+
+.Payment-type {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+#Continue {
+    width: 60%;
+    font-size: 12px;
+    padding: 12px;
+}
+
+#Success {
+    width: 80%;
+    margin: auto;
+    max-width: 650px;
+    border-radius: 10px;
+    text-align: left;
+
+}
+#Success h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+}
+
+
